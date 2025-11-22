@@ -1,0 +1,23 @@
+.sec6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.sec6 > :nth-child(2) {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+@media(max-width: 767px) {
+    .sec6 > :nth-child(1) {
+       gap: 30px;   
+       display: grid;
+       grid-template-columns: auto auto;
+       text-align: center;
+    }
+    .sec6 > :nth-child(2) {
+         font-size: 10px;
+}
+}

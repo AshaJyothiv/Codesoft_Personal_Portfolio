@@ -1,0 +1,125 @@
+.sec1{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    gap: 60px;
+}
+.sec-1-1{
+    margin-left: 100px;
+}
+.sec-1-1 img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+.sec-1-2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sec-1-2-1{
+    font-weight: 600;
+}
+h1{
+    font-size: 50px;
+    color: brown;
+}
+.sec-1-2-3{
+    font-weight: 600;
+    font-size: 22px;
+}
+p{
+    font-size: 18px;
+    width: 90%;
+}
+.btns{
+    display: flex;
+    gap: 20px;
+}
+.btns >:nth-child(1){
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btns >:nth-child(1):hover {
+    background-color: black;
+    color: white;
+}
+.btns >:nth-child(2){
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 20px;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btns >:nth-child(2):hover {
+    background-color: brown;
+    color: white;
+    border-color: brown;
+}
+.social {
+    display: flex;
+    gap: 20px;
+}
+.social img{
+    width: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.social img:hover{
+    transform:scale(0.9);
+}
+
+@media (max-width:1024px) {
+    .sec1{
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+        }
+        p{
+            text-align: center;
+            width: 70%;
+        }
+        .sec-1-1{
+            margin-left: 0px;
+        }
+         .sec-1-1 img{
+            width: 450px; 
+        }
+        .sec-1-2{
+            align-items: center;
+            padding-bottom: 50px;
+         }
+}
+
+@media (max-width:767px) {
+    .sec1{
+        flex-direction: column;
+        }
+        h1{
+            font-size: 40px;
+        }
+        p{
+            text-align: center;
+        }
+        .sec-1-1{
+            margin-top: 50px;
+        }
+        .sec-1-1 img{
+            width: 300px;
+            height: 300px;
+        }
+        .sec-1-2{
+            align-items: center;
+         }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asha Jyothi | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      color: #333;
+      transition: background 0.5s ease;
+    }
+
+    nav.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #0077b6;
+      transition: color 0.3s ease;
+    }
+
+    .menu-bar {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .menu-bar li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .menu-bar li a:hover {
+      color: #0077b6;
+    }
+
+    section.sec1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+      gap: 3rem;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .sec-1-1 img {
+      width: 300px;
+      border-radius: 50%;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      transition: transform 0.5s ease;
+    }
+
+    .sec-1-1 img:hover {
+      transform: scale(1.05);
+    }
+
+    .sec-1-2 {
+      max-width: 500px;
+    }
+
+    .sec-1-2-1 {
+      font-size: 1.2rem;
+      color: #555;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #0077b6;
+      margin-bottom: 0.5rem;
+    }
+
+    .sec-1-2-3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #023e8a;
+      margin-bottom: 1rem;
+      display: inline-block;
+      animation: slideIn 1s ease-out;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .btns button {
+      padding: 0.7rem 1.5rem;
+      margin-right: 1rem;
+      border: none;
+      background-color: #0077b6;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btns button:hover {
+      background-color: #023e8a;
+    }
+
+    .social img {
+      width: 30px;
+      margin-right: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .social img:hover {
+      transform: scale(1.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Asha Jyothi</div>
+    <ul class="menu-bar">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="sec1">
+    <div class="sec-1-1">
+      <img src="/assets/profile1.png" alt="Profile picture of Asha Jyothi">
+    </div>
+    <div class="sec-1-2">
+      <span class="sec-1-2-1">Hello I'm</span>
+      <h1>Asha Jyothi</h1>
+      <span class="sec-1-2-3">Frontend Developer</span>
+      <p>
+        A portfolio website is an online platform that showcases your work, skills, and personal brand, serving as a digital business card or CV.
+      </p>
+      <div class="btns">
+        <button onclick="window.location.href='cv.pdf'">Download CV</button>
+        <button onclick="window.location.href='#contact'">Contact Info</button>
+        <div class="social">
+          <img src="/assets/Linkedin.png" alt="LinkedIn icon">
+          <img src="/assets/github.png" alt="GitHub icon">
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
