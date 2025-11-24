@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodwebpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" </head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="nav-1">
+                <div class="logo">వంటిల్లు</div>
+                <ul class="links">
+                    <li>Home</li>
+                    <li>Menu</li>
+                    <li>About</li>
+                    <li>Location</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </div>
+        <div class="hero"> 
+            <div class="left">
+            <span class="left1">Are you Hungry?</span>
+            <span class="left2">Don't Wait.</span>
+            <span class="left3">Let start to order food now</span>
+            <span class="left4">check out Menu</span>
+            </div>
+            <div class="food" id="food"></div>
+        </div>
+        <div class="items">
+            <div id="food1"></div>
+            <div id="food2"></div>
+            <div id="food3"></div>
+            <div id="food4"></div>
+        </div>
+    </div>
+    <script>
+        let food = document.getElementById("food");
+        let food1 = document.getElementById("food1");
+        let food2 = document.getElementById("food2");
+        let food3 = document.getElementById("food3");
+        let food4 = document.getElementById("food4");
+
+
+        food1.addEventListener('click',()=> {
+            food.style.backgroundImage="url('/images/food1.png')";
+        });
+        food2.addEventListener('click',()=> {
+            food.style.backgroundImage="url('/images/food2.png')";
+        });
+        food3.addEventListener('click',()=> {
+            food.style.backgroundImage="url('/images/food3.png')";
+        });
+        food4.addEventListener('click',()=> {
+            food.style.backgroundImage="url('/images/food4.png')";
+        });
+    </script>
+</body>
+
+</html>
